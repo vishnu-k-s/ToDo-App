@@ -1,0 +1,14 @@
+curl http://127.0.0.1:8000/api/todos/ -u 'vishnu:vishnu'
+
+curl -X "POST" http://127.0.0.1:8000/api/signup -H 'Content-Type: application/json' -d '{"username":"vishnu","password":"vishnu"}'
+
+62a4f24c9d16f3d9b259f2c1f85ae27de2f37ac4
+
+curl    http://127.0.0.1:8000/api/todos/ -H 'Authorization: Token 62a4f24c9d16f3d9b259f2c1f85ae27de2f37ac4'
+
+curl -X "POST" http://127.0.0.1:8000/api/login -H 'Content-Type: application/json' -d '{"username":"vishnu","password":"vishnu"}'
+
+curl -X "POST" http://127.0.0.1:8000/api/todos/ -H 'Authorization: Token 6693abbcf237d13cdd74e3941df2943ae14a1bb1'
+
+curl -X "POST" http://127.0.0.1:8000/api/todos/ -H 'Authorization: Token 6693abbcf237d13cdd74e3941df2943ae14a1bb1'
+
